@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>Se connecter | Inside our Minds</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="fr/style/style.css" />
+    <link rel="icon" href="src/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="fr/script/script.js"></script>
+  </head>
+  <body>
+    <div class="login_container">
+      <div>
+        <div id="login_c">
+          <div class="login_home_container">
+            <img src="fr/src/home_image.png" onclick="window.location.href = 'index.html'"/>
+          </div>
+          <div class="login_title connecting_title">Se connecter</div>
+          <form class="login_form">
+            <div>Nom d'utilisateur :</div>
+            <input name="username" />
+            <div>Mot de passe :<br /></div>
+            <input name="password" type="password" autocomplete="off" />
+            <a><div>Mot de passe oublié ?</div></a>
+            <div class="login_button">
+              <div onclick="togglingLeavingAnimations('home.html?firstArrival=True')">Valider</div>
+              <div onclick="window.location.href = 'user_signin.html'">
+                S'inscrire
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

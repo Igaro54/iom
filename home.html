@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Inside our Minds</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="fr/style/style.css" />
+    <link rel="icon" href="fr/src/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="fr/script/script.js"></script>
+  </head>
+  <body class="home_body">
+    <div id="home_title_c" class="home_title_container">
+      <div></div>
+      <h1 class="home_title">Inside Our Minds</h1>
+      <div>
+        <div id="username_cont" class="list_username_container">
+          <img src="fr/src/user_sample_image.png" />
+          <div id="username">Igaro</div>
+          <div>
+            <img id="username_arrow" src="fr/src/arrow_down_image.png" />
+          </div>
+        </div>
+        <div id="username_drop" class="username_dropdown">
+          <div onclick="togglingLeavingAnimations('profil.html')">Carte d'auteur</div>
+          <div>Paramètres</div>
+          <div>Déconnexion</div>
+        </div>
+      </div>
+    </div>
+    <div id="filter_c" class="sidebar_left_container">
+      <div id="searchbar_c" class="searchbar_all">
+        <div class="searchbar_container">
+          <input type="text" name="searchbar" placeholder="Rechercher un titre, un auteur...">
+        </div>
+        <div class="sidebar_title_img">
+          <img src="fr/src/search_image.png" />
+        </div>
+      </div>
+      <div id="filter_all">
+        <div id="filter_list" class="filter_list_container">
+          <div class="filter_option">
+            <div class="filter_checkbox"><img class="filter_checkbox_img" src="fr/src/checkmark_image.png" /></div>
+            <div>Slam</div>
+          </div>
+          <div class="filter_option">
+            <div class="filter_checkbox"><img class="filter_checkbox_img" src="fr/src/checkmark_image.png" /></div>
+            <div>Chanson</div>
+          </div>
+          <div class="filter_option">
+            <div class="filter_checkbox"><img class="filter_checkbox_img" src="fr/src/checkmark_image.png" /></div>
+            <div>Rap</div>
+          </div>
+          <div class="filter_option">
+            <div class="filter_checkbox"><img class="filter_checkbox_img" src="fr/src/checkmark_image.png" /></div>
+            <div>Comptine</div>
+          </div>
+          <div class="filter_option">
+            <div class="filter_checkbox"><img class="filter_checkbox_img" src="fr/src/checkmark_image.png" /></div>
+            <div>Poème</div>
+          </div>
+        </div>
+        <div class="filter_title_container">
+          <div class="filter_title">FILTRER</div>
+        </div>
+      </div>
+      <div id="spotify_c" class="spotify_all">
+        <div class="spotify_container">
+          <div>Lier un compte <span>Spotify®</span></div>
+        </div>
+        <div class="sidebar_title_img">
+          <img src="fr/src/spotify_image.png" />
+        </div>
+      </div>
+    </div>
+    <div class="all_container">
+      <div id="home_interact_c" class="user_interactions">
+        <div class="heart"><img src="fr/src/heart_image.png" /></div>
+        <div id="pass_button" class="pass">PASSER</div>
+        <div class="star"><img src="fr/src/star_image.png" /></div>
+      </div>
+      <div id="home_c" class="home_container">
+        <div id="main_first_text" class="main_first_container">
+          <div id="first_content">Salut</div>
+        </div>
+        <div id="main_second_text" class="main_second_container">
+          <div id="second_content">Tu fais quoi ?</div>
+        </div>
+      </div>
+      <div class="user_interactions reverse">
+        <div id="home_comments_c" class="comment"><img src="fr/src/comment_image.png" /></div>
+      </div>
+    </div>
+    <div id="home_nav_c" class="nav_container">
+      <div id="nav_buttons">
+        <div id="nav_plus" onclick="togglingLeavingAnimations('edit_text.html')"><img src="fr/src/plus_image.png" /></div>
+        <div id="nav_mytexts"><img src="fr/src/mytexts_image.png" /></div>
+        <div id="nav_notifications"><img src="fr/src/bell_image.png" /></div>
+        <div id="nav_loved"><img src="fr/src/star_image.png" /></div>
+        <div id="nav_leaderboard"><img src="fr/src/trophy_image.png" /></div>
+      </div>
+    </div>
+  </body>
+</html>

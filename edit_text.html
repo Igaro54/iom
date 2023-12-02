@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Inside our Minds</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="fr/style/style.css" />
+    <link rel="icon" href="fr/src/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="fr/script/script.js"></script>
+  </head>
+  <body class="home_body">
+    <div id="home_title_c" class="home_title_container">
+      <div></div>
+      <h1 class="home_title">Inside Our Minds</h1>
+      <div>
+        <div id="username_cont" class="list_username_container">
+          <img src="fr/src/user_sample_image.png" />
+          <div id="username">Igaro</div>
+          <div>
+            <img id="username_arrow" src="fr/src/arrow_down_image.png" />
+          </div>
+        </div>
+        <div id="username_drop" class="username_dropdown">
+          <div onclick="togglingLeavingAnimations('profil.html')">Carte d'auteur</div>
+          <div>Paramètres</div>
+          <div>Déconnexion</div>
+        </div>
+      </div>
+    </div>
+    <div class="all_container">
+      <div class="user_interactions"></div>
+      <div id="home_c" class="home_container">
+        <div id="main_container">
+          <form id="edit_text_form" name="edit_form">
+            <div class="edit_multiple_content_container">
+              <div class="edit_title">Titre<span class="important">*</span> :</div>
+              <div class="second_content_container">
+                <div class="edit_select_title">Catégorie<span class="important">*</span> :</div>
+                <select name="edit_select">
+                  <option selected>Choisir...</option>
+                  <option>Chanson</option>
+                  <option>Slam</option>
+                  <option>Poème</option>
+                  <option>Comptine</option>
+                  <option>Rap</option>
+                </select>
+              </div>
+            </div>
+            <input name="title" />
+            <div class="edit_multiple_content_container">
+              <div>Votre texte<span class="important">*</span> :<br /></div>
+              <div class="second_content_container">
+                <div>Audio :<br /></div>
+                <button onclick="document.getElementById('edit_add_file').click()">Choisir...</button>
+                <input id="edit_add_file" type="file" accept="audio/*" >
+              </div>
+            </div>
+            <div class="edit_textarea_container">
+              <textarea id="edit_textarea" name="edit_textarea"></textarea>
+              <img id="fullscreen_button" src="fr/src/fullscreen_on_image.png" />
+            </div>
+            <input class="publish_button" type="submit" name="publish_b" value="Publier ce texte" />
+          </form>
+        </div>
+      </div>
+      <div id="home_comments_c" class="user_interactions reverse">
+        <div class="conditions"><img src="fr/src/condition_image.png" /></div>
+        <div class="question"><img src="fr/src/question_image.png" /></div>
+      </div>
+    </div>
+    <div id="home_nav_c" class="nav_container">
+      <div id="nav_buttons">
+        <div id="nav_home" onclick="togglingLeavingAnimations('home.html?firstArrival=False')"><img src="fr/src/home_image.png" /></div>
+        <div id="nav_mytexts"><img src="fr/src/mytexts_image.png" /></div>
+        <div id="nav_notifications"><img src="fr/src/bell_image.png" /></div>
+        <div id="nav_loved"><img src="fr/src/star_image.png" /></div>
+        <div id="nav_leaderboard"><img src="fr/src/trophy_image.png" /></div>
+      </div>
+    </div>
+  </body>
+</html>
